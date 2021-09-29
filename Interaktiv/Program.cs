@@ -15,16 +15,24 @@ if (direction == "går på")
 
         if (direction2 == "går av")
         {
-            Console.WriteLine("Du går av och du märker att tåget stannade precis framför ditt hem. Du går in och somnar");
+            Console.WriteLine("Du går av och du märker att tåget stannade precis framför ditt hem. Du går in och somnar. Börja om.");
         }
-        if (direction2 == "stannar kvar")
+        else if (direction2 == "stannar kvar")
         {
-            Console.WriteLine("Du stannar kvar och åker till slutstationen. Du kliver av och ser att du har hamnat i Narnia.");
+            Console.WriteLine("Du stannar kvar och åker till slutstationen. Du kliver av och ser att du har hamnat i Narnia. Börja om.");
+        }
+        else
+        {
+            Console.WriteLine("Du verkar ha skrivit något fel. Försök igen");
         }
     }
-    if (stand == "sätter mig")
+    else if (stand == "sätter mig")
     {
-        Console.WriteLine("Personen du sätter dig brevid drar plötsligt framm en kniv och hugger dig i benet. Du går av vid nästa station och letar efter ett sjukhus.");
+        Console.WriteLine("Personen du sätter dig brevid drar plötsligt framm en kniv och hugger dig i benet. Du går av vid nästa station och letar efter ett sjukhus. Börja om.");
+    }
+    else
+    {
+        Console.WriteLine("Du verkar ha skrivit något fel. Försök igen");
     }
 }
 else if (direction == "stannar kvar")
@@ -36,9 +44,13 @@ else if (direction == "stannar kvar")
     {
         Console.WriteLine("Det kommer fram en snigel till dina fötter och säger åt dig att ta något annat val. Börja om");   
     }
-    if (staircase == "går ner")
+    else if (staircase == "går ner")
     {
-        Console.WriteLine("Du går ner för trappan och kommer till helvetet.");
+        Console.WriteLine("Du går ner för trappan och kommer till helvetet. Börja om.");
+    }
+    else
+    {
+        Console.WriteLine("Du verkar ha skrivit något fel. Försök igen");
     }
 }
 
